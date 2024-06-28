@@ -3,7 +3,7 @@
 There are two ways to add the boothotpatch module to the kernel:
 
 
-&nbsp;&nbsp;  **Method 1**: modify the kernel source code and Makefile and recompile the kernel. Then, install the newly compiled kernel in the system.
+&nbsp;&nbsp;&nbsp;&nbsp;  **Method 1**: modify the kernel source code and Makefile and recompile the kernel. Then, install the newly compiled kernel in the system.
 
-&nbsp;&nbsp;  **Method 2**: compile the boothotpatch module separately and configure the module to start automatically at boot.
+&nbsp;&nbsp;&nbsp;&nbsp;  **Method 2**: compile the boothotpatch module separately and configure the module to start automatically at boot.
 
