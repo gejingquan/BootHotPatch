@@ -1,3 +1,5 @@
+<font size="6">这是大号字体</font>
+
 #**Section 1**: Add the boothotpatch kernel module to the kernel.
 
 There are two ways to add the boothotpatch module to the kernel:
