@@ -1,0 +1,7 @@
+target     /home/gejingquan/projects/HotPatch/Hotpatcher/demos/demo1/tmp/target     /home/gejingquan/projects/HotPatch/Hotpatcher/demos/demo1/tmp/testlib.so
+target2    /home/gejingquan/projects/HotPatch/Hotpatcher/demos/demo2/tmp/target2    /home/gejingquan/projects/HotPatch/Hotpatcher/demos/demo2/tmp/testlib2.so
+target3    /home/gejingquan/projects/HotPatch/Hotpatcher/demos/demo3/tmp/target3    /home/gejingquan/projects/HotPatch/Hotpatcher/demos/demo3/tmp/testlib3.so
+target4    /home/gejingquan/projects/HotPatch/Hotpatcher/demos/demo4/tmp/target4    /home/gejingquan/projects/HotPatch/Hotpatcher/demos/demo4/tmp/testlib4.so
+lua        /home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua    /home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/patchroot/lua.kpatch
+
+

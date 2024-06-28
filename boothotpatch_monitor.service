@@ -1,0 +1,16 @@
+[Unit]
+Description=Monitor the hot patch list
+Before=default.target
+Wants=default.target
+
+[Service]
+ExecStart=/sbin/boothotpatch_monitor
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=default.target
+
+
+
