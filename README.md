@@ -6,6 +6,8 @@ There are two ways to add the boothotpatch module to the kernel:
 
 ## Method 2: compile the boothotpatch module separately and configure the module to start automatically at boot.
 
-### Step 1: Create a boothotpatch folder
-`mkdir boothotpatch`
+### Step 1: Download BootHotPatch code
+`git clone https://github.com/gejingquan/BootHotPatch`
+
+### Step2: 
 
