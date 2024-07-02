@@ -36,4 +36,11 @@ Make *boothotpatch.ko* automatically loaded into the kernel when booting
 
 `sudo cp boothotpatch.ko /lib/modules/$(uname -r)/kernel/drivers/misc`
 
+`sudo cp load-boothotpatch-ko.service /etc/systemd/system/`
+
+`sudo systemctl daemon-reload`
+
+`sudo systemctl enable load-boothotpatch-ko`
+
+
 
