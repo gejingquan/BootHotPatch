@@ -15,10 +15,14 @@ Modify the kernel source code and Makefile and recompile the kernel. Then, insta
 ## Method 2: 
 Compile the boothotpatch module separately and configure the module to start automatically at boot.
 
-### Step 1: Download BootHotPatch code
+### Step 1: 
+Download BootHotPatch code
+
 `git clone https://github.com/gejingquan/BootHotPatch`
 
-### Step2: Compile BootHotPatch kernel module to get boothotpatch.ko
+### Step2: 
+Compile BootHotPatch kernel module to get boothotpatch.ko
+
 `cd BootHotPatch`
 
 `sudo apt install build-essential`
