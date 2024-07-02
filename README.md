@@ -34,3 +34,6 @@ Now, you have got *boothotpatch.ko*.
 ### Step3: 
 Make *boothotpatch.ko* automatically loaded into the kernel when booting
 
+`sudo cp boothotpatch.ko /lib/modules/$(uname -r)/kernel/drivers/misc`
+
+
