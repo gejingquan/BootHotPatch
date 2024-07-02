@@ -9,5 +9,7 @@ There are two ways to add the boothotpatch module to the kernel:
 ### Step 1: Download BootHotPatch code
 `git clone https://github.com/gejingquan/BootHotPatch`
 
-### Step2: 
+### Step2: Compile BootHotPatch kernel module to get boothotpatch.ko
+`cd BootHotPatch`
+``
 
