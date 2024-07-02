@@ -20,7 +20,7 @@ Download BootHotPatch code
 
 `git clone https://github.com/gejingquan/BootHotPatch`
 
-### Step2: 
+### Step 2: 
 Compile BootHotPatch kernel module to get boothotpatch.ko
 
 `cd BootHotPatch`
@@ -31,7 +31,7 @@ Compile BootHotPatch kernel module to get boothotpatch.ko
 
 Now, you have got *boothotpatch.ko*.
 
-### Step3: 
+### Step 3: 
 Make *boothotpatch.ko* automatically loaded into the kernel when booting
 
 `sudo cp boothotpatch.ko /lib/modules/$(uname -r)/kernel/drivers/misc`
@@ -42,5 +42,16 @@ Make *boothotpatch.ko* automatically loaded into the kernel when booting
 
 `sudo systemctl enable load-boothotpatch-ko`
 
+### Step 4:
+Compile the *boothotpatch_monitor* software and set it as the service that starts automatically when booting.
 
+`gcc -o boothotpatch_monitor boothotpatch_monitor.c`
+
+`sudo cp boothotpatch_monitor /sbin/`
+
+`sudo cp boothotpatch_monitor.service /etc/systemd/system/`
+
+`sudo systemctl daemon-reload`
+
+`sudo systemctl enable boothotpatch_monitor`
 
