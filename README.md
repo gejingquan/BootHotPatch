@@ -31,6 +31,6 @@ Compile BootHotPatch kernel module to get boothotpatch.ko
 
 Now, you have got *boothotpatch.ko*.
 
-### Step2: 
+### Step3: 
 Make *boothotpatch.ko* automatically loaded into the kernel when booting
 
