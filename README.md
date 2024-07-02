@@ -29,5 +29,8 @@ Compile BootHotPatch kernel module to get boothotpatch.ko
 
 `make`
 
-Now, you have got **boothotpatch.ko**.
+Now, you have got *boothotpatch.ko*.
+
+### Step2: 
+Make *boothotpatch.ko* automatically loaded into the kernel when booting
 
