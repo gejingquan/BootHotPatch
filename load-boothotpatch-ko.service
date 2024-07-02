@@ -1,0 +1,11 @@
+[Unit]
+Description=Load boothotpatch Kernel Module
+Before=boothotpatch_monitor.service
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/insmod /lib/modules/$(uname -r)/kernel/drivers/misc/boothotpatch.ko
+
+[Install]
+WantedBy=multi-user.target
+

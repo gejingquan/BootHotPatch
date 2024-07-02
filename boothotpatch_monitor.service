@@ -2,6 +2,7 @@
 Description=Monitor the hot patch list
 Before=default.target
 Wants=default.target
+After=load-boothotpatch-ko.service
 
 [Service]
 ExecStart=/sbin/boothotpatch_monitor
