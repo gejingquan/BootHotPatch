@@ -20,6 +20,10 @@ Compile the boothotpatch module separately and configure the module to start aut
 
 ### Step2: Compile BootHotPatch kernel module to get boothotpatch.ko
 `cd BootHotPatch`
+
 `sudo apt install build-essential`
-`...`
+
+`make`
+
+Now, you have got **boothotpatch.ko**.
 
