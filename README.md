@@ -55,3 +55,8 @@ Compile the *boothotpatch_monitor* software and set it as the service that start
 
 `sudo systemctl enable boothotpatch_monitor`
 
+### Step 5:
+
+
+
+
