@@ -4,7 +4,7 @@ Before=boothotpatch_monitor.service
 
 [Service]
 Type=oneshot
-ExecStart=/sbin/insmod /lib/modules/$(uname -r)/kernel/drivers/misc/boothotpatch.ko
+ExecStart=/sbin/insmod /lib/modules/5.15.0-1046-raspi/kernel/drivers/misc/boothotpatch.ko
 
 [Install]
 WantedBy=multi-user.target
