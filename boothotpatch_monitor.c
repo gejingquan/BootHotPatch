@@ -30,7 +30,7 @@ void signal_handler(int signum)
 	int dev_fd;
 	int i;
 	
-	fp = fopen("/home/gejingquan/projects/HotPatch/boothotpatch_monitor.txt", "a");	
+	fp = fopen("/home/gejingquan/projects/BootHotPatch/boothotpatch_monitor.txt", "a");	
     fprintf(fp,"Received signal %d\n", signum);
 
 	dev_fd = open(DEVICE_PATH, O_RDONLY);
@@ -83,13 +83,13 @@ int main()
 
 	
 	signal(SIGUSR1, signal_handler);	
-	fp = fopen("/home/gejingquan/projects/HotPatch/boothotpatch_monitor.txt", "a");	
+	fp = fopen("/home/gejingquan/projects/BootHotPatch/boothotpatch_monitor.txt", "a");	
 	monitor_pid = getpid();
 	fprintf(fp,"My PID is: %d\n", monitor_pid);
 	
 
 
-	list_fp=fopen("/home/gejingquan/projects/HotPatch/boothotpatch_list.txt", "r");
+	list_fp=fopen("/home/gejingquan/projects/BootHotPatch/boothotpatch_list.txt", "r");
     while (fgets(line, sizeof(line), list_fp) != NULL) {
         sscanf(line, "%s %s %s", hotpatchapp[count].hotpatch_app_name, 
 			hotpatchapp[count].hotpatch_app_path, hotpatchapp[count].hotpatch_lib_path);
@@ -129,7 +129,7 @@ int main()
 	fclose(fp);
 
 	while(1){
-		fp = fopen("/home/gejingquan/projects/HotPatch/boothotpatch_monitor.txt", "a");
+		fp = fopen("/home/gejingquan/projects/BootHotPatch/boothotpatch_monitor.txt", "a");
 		fprintf(fp,"I'm monitoring all applications that require hot patching.\n"); 
         sleep(100); 
 		fclose(fp);
