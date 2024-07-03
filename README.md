@@ -42,7 +42,9 @@ Make *boothotpatch.ko* automatically loaded into the kernel when booting
 
 `sudo systemctl enable load-boothotpatch-ko`
 
-### Step 4:
+# Section 2: Add boothotpatch_monitor to the system service list.
+
+### Step 1:
 Compile the *boothotpatch_monitor* software and set it as the service that starts automatically when booting.
 
 `gcc -o boothotpatch_monitor boothotpatch_monitor.c`
