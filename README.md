@@ -62,6 +62,8 @@ Compile the *boothotpatch_monitor* software and set it as the service that start
 ### Step 1:
 Download the software source code of libcareplus, compile and install it.
 
+`cd ..`
+
 `git clone https://github.com/openeuler-mirror/libcareplus`
 
 `cd libcareplus`
