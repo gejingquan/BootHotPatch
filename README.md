@@ -42,7 +42,7 @@ Make *boothotpatch.ko* automatically loaded into the kernel when booting
 
 `sudo systemctl enable load-boothotpatch-ko`
 
-# Section 2: Add boothotpatch_monitor to the system service list.
+# Section 2: Set boothotpatch_monitor as a system service and enable it to start automatically at boot
 
 ### Step 1:
 Compile the *boothotpatch_monitor* software and set it as the service that starts automatically when booting.
@@ -57,7 +57,17 @@ Compile the *boothotpatch_monitor* software and set it as the service that start
 
 `sudo systemctl enable boothotpatch_monitor`
 
-### Step 2:
+# Section 3: Install the hot patch deployment tool libcareplus and prepare a demonstration instance (CVE-2021-45985).
+
+### Step 1:
+Download the software source code of libcareplus and compile it.
+
+`git clone https://github.com/openeuler-mirror/libcareplus`
+
+`cd libcareplus`
+
+``
+
 
 
 
