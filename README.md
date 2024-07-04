@@ -7,7 +7,7 @@
 **Linux kernel version**:  Linux 5.15.0-1046-raspi (aarch64)
  
 
-There are two ways to add the boothotpatch module to the kernel:
+There are two methods to add the boothotpatch module to the kernel:
 
 ## Method 1: 
 Modify the kernel source code and Makefile and recompile the kernel. Then, install the newly compiled kernel into the system and reboot.
