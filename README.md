@@ -113,6 +113,13 @@ Next, let's run the vulnerable binary.
 
 Since the entire BootHotPatch framework has not yet been started, we can see the crash information.
 
+```sh
+lua.c:424:10: fatal error: readline/readline.h: No such file or directory
+  424 | #include <readline/readline.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+```
+
 We now restart the system to start the BootHotPatch framework.
 
 `sudo reboot`
