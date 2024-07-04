@@ -107,7 +107,7 @@ Now we have the binary with the CVE-2021-45985 vulnerability (./lpmake/lua) and 
 
 ### Step 3:
 
-Test the lua demo example.
+Test the lua demo example CVE-2021-45985.
 
 `mkdir seed`
 
