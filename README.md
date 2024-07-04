@@ -109,7 +109,18 @@ Now we have the binary with the CVE-2021-45985 vulnerability (./lpmake/lua) and 
 
 Test the lua demo example.
 
-``
+`mkdir seed`
 
-``
+`cp ../../../../BootHotPatch/poc.lua  ./seed/`
+
+`./lpmake/lua seed/poc.lua`
+
+Wait for more than 10 seconds, and if no crash information appears, it means that the hot patch has taken effect.
+
+Open another terminal and enter the command:
+
+`sudo libcare-ctl info -p $(pidof lua)`
+
+We can see the hot patch information.
+
 
