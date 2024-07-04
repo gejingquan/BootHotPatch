@@ -60,7 +60,7 @@ Compile the *boothotpatch_monitor* software and set it as the service that start
 # Section 3: Install the hot patch deployment tool libcareplus and prepare a demonstration instance (CVE-2021-45985).
 
 ### Step 1:
-Download the software source code of libcareplus and compile it.
+Download the software source code of libcareplus, compile and install it.
 
 `git clone https://github.com/openeuler-mirror/libcareplus`
 
@@ -74,7 +74,7 @@ Download the software source code of libcareplus and compile it.
 
 `sudo chmod 777 /usr/local/bin/*`
 
-``
+### Step 1:
 
 
 
