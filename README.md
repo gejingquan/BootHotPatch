@@ -149,6 +149,12 @@ We now restart the system to start the BootHotPatch framework.
 
 Wait for more than 10 seconds, and if no crash information appears, it means that the hot patch has taken effect.
 
+```
+gejingquan@gejingquan-desktop:~/projects/libcareplus/samples/lua-2021-45985/lua$ ./lpmake/lua seed/poc.lua
+Waiting for the hot patch to be installed...
+Waiting for the hot patch to be uninstalled...
+```
+
 ### Terminal 2：
 Open another terminal and enter the command:
 
