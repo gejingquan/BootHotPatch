@@ -176,6 +176,21 @@ Close the boothotpatch_monitor system service and run the lua software again wit
 
 Now you can see the crash information, indicating that the hot patch has not been deployed.
 
-
+```
+gejingquan@gejingquan-desktop:~/projects/libcareplus/samples/lua-2021-45985/lua$ ./lpmake/lua seed/poc.lua
+Waiting for the hot patch to be installed...
+=================================================================
+==1989==ERROR: AddressSanitizer: heap-buffer-overflow on address 0xffff9c2006d1 at pc 0xaaaacdc268d0 bp 0xfffffbcaca80 sp 0xfffffbcaca90
+READ of size 1 at 0xffff9c2006d1 thread T0
+    #0 0xaaaacdc268cc in luaG_getfuncline (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x268cc)
+    #1 0xaaaacdc26a2c in getcurrentline (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x26a2c)
+    #2 0xaaaacdc2bcf8 in luaG_runerror (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x2bcf8)
+    #3 0xaaaacdc2af4c in typeerror (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x2af4c)
+    #4 0xaaaacdc2b0f4 in luaG_callerror (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x2b0f4)
+    #5 0xaaaacdc2f03c in luaD_tryfuncTM (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x2f03c)
+    #6 0xaaaacdc30dfc in luaD_precall (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x30dfc)
+    #7 0xaaaacdc30ec8 in ccall (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x30ec8)
+    #8 0xaaaacdc31010 in luaD_callnoyield (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x31010)
+```
 
 
