@@ -83,6 +83,16 @@ Download the lua software source code and compile a binary file with the CVE-202
 
 `mkdir lua-2021-45985`
 
+`git clone https://github.com/lua/lua`
+
+`cd lua`
+
+`git checkout cf613cd`
+
+`git format-patch -1`
+
+`git checkout 066e0f9`
+
 ``
 
 
