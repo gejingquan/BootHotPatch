@@ -66,6 +66,8 @@ Download the software source code of libcareplus and compile it.
 
 `cd libcareplus`
 
+`sudo apt-get install -y binutils elfutils libelf-dev libunwind-dev`
+
 ``
 
 
