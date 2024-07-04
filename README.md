@@ -123,4 +123,9 @@ Open another terminal and enter the command:
 
 We can see the hot patch information.
 
+Press Ctrl+C in the original terminal to terminate the running of the Lua software.
+
+
+
+
 
