@@ -114,10 +114,20 @@ Next, let's run the vulnerable binary.
 Since the entire BootHotPatch framework has not yet been started, we can see the crash information.
 
 ```sh
-lua.c:424:10: fatal error: readline/readline.h: No such file or directory
-  424 | #include <readline/readline.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+gejingquan@gejingquan-desktop:~/projects/libcareplus/samples/lua-2021-45985/lua$ ./lpmake/lua seed/poc.lua
+Waiting for the hot patch to be installed...
+=================================================================
+==40815==ERROR: AddressSanitizer: heap-buffer-overflow on address 0xffffa23006d1 at pc 0xaaaad8d868d0 bp 0xffffe3a572a0 sp 0xffffe3a572b0
+READ of size 1 at 0xffffa23006d1 thread T0
+    #0 0xaaaad8d868cc in luaG_getfuncline (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x268cc)
+    #1 0xaaaad8d86a2c in getcurrentline (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x26a2c)
+    #2 0xaaaad8d8bcf8 in luaG_runerror (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x2bcf8)
+    #3 0xaaaad8d8af4c in typeerror (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x2af4c)
+    #4 0xaaaad8d8b0f4 in luaG_callerror (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x2b0f4)
+    #5 0xaaaad8d8f03c in luaD_tryfuncTM (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x2f03c)
+    #6 0xaaaad8d90dfc in luaD_precall (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x30dfc)
+    #7 0xaaaad8d90ec8 in ccall (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x30ec8)
+    #8 0xaaaad8d91010 in luaD_callnoyield (/home/gejingquan/projects/libcareplus/samples/lua-2021-45985/lua/lpmake/lua+0x31010)
 ```
 
 We now restart the system to start the BootHotPatch framework.
