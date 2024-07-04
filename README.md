@@ -105,9 +105,9 @@ Download the lua software source code and compile a binary file with the CVE-202
 
 Now we have the binary with the CVE-2021-45985 vulnerability (./lpmake/lua) and hot patch file (./patchroot/lua.kpatch).
 
-### Step 3:
+# Section 4: Test the lua demo example CVE-2021-45985.
 
-Test the lua demo example CVE-2021-45985.
+### Terminal 1:
 
 `mkdir seed`
 
@@ -117,14 +117,24 @@ Test the lua demo example CVE-2021-45985.
 
 Wait for more than 10 seconds, and if no crash information appears, it means that the hot patch has taken effect.
 
+### Terminal 2：
 Open another terminal and enter the command:
 
 `sudo libcare-ctl info -p $(pidof lua)`
 
 We can see the hot patch information.
 
-Press Ctrl+C in the original terminal to terminate the running of the Lua software.
+### Terminal 1：
 
+Press *Ctrl+C* in the original terminal to terminate the running of the Lua software.
+
+Close the boothotpatch_monitor system service and run the lua software again with *poc.lua* as input..
+
+`sudo systemctl stop boothotpatch_monitor.service`
+
+`./lpmake/lua seed/poc.lua`
+
+Now you can see the crash information, indicating that the hot patch has not been deployed.
 
 
 
