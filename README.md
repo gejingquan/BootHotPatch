@@ -109,6 +109,10 @@ Now we have the binary with the CVE-2021-45985 vulnerability (./lpmake/lua) and 
 
 Next, let's run the vulnerable binary.
 
+`mkdir seed`
+
+`cp ../../../../BootHotPatch/poc.lua  ./seed/`
+
 `./lpmake/lua seed/poc.lua`
 
 Since the entire BootHotPatch framework has not yet been started, we can see the crash information as shown below.
@@ -140,9 +144,6 @@ We now restart the system to start the BootHotPatch framework.
 
 `cd ~/projects/libcareplus/samples/lua-2021-45985/lua`
 
-`mkdir seed`
-
-`cp ../../../../BootHotPatch/poc.lua  ./seed/`
 
 `./lpmake/lua seed/poc.lua`
 
