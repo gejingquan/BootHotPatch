@@ -147,13 +147,15 @@ We now restart the system to start the BootHotPatch framework.
 
 `./lpmake/lua seed/poc.lua`
 
-Wait for more than 10 seconds, and if no crash information appears, it means that the hot patch has taken effect.
+After waiting for more than 10 seconds, no crash information is displayed and the running results are as follows. 
+
 
 ```
 gejingquan@gejingquan-desktop:~/projects/libcareplus/samples/lua-2021-45985/lua$ ./lpmake/lua seed/poc.lua
 Waiting for the hot patch to be installed...
 Waiting for the hot patch to be uninstalled...
 ```
+This shows that the hot patch has worked and the CVE-2021-45985 vulnerability has been patched.
 
 ### Terminal 2：
 Open another terminal and enter the command:
