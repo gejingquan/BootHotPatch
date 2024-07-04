@@ -97,9 +97,8 @@ Download the lua software source code and compile a binary file with the CVE-202
 
 `patch -p1 < 0001-lua.patch`
 
-``
+`sudo apt-get install libreadline-dev`
 
-
-
+`sudo libcare-patch-make --clean -i 0001 0001-Bug-finalizers-can-be-called-with-an-invalid-stack.patch`
 
 
