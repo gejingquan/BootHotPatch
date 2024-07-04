@@ -93,6 +93,10 @@ Download the lua software source code and compile a binary file with the CVE-202
 
 `git checkout 066e0f9`
 
+`cp ../../../../BootHotPatch/0001-lua.patch ./`
+
+`patch -p1 < 0001-lua.patch`
+
 ``
 
 
