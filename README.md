@@ -111,7 +111,7 @@ Next, let's run the vulnerable binary.
 
 `./lpmake/lua seed/poc.lua`
 
-Since the entire BootHotPatch framework has not yet been started, we can see the crash information.
+Since the entire BootHotPatch framework has not yet been started, we can see the crash information as shown below.
 
 ```sh
 gejingquan@gejingquan-desktop:~/projects/libcareplus/samples/lua-2021-45985/lua$ ./lpmake/lua seed/poc.lua
@@ -137,6 +137,8 @@ We now restart the system to start the BootHotPatch framework.
 # Section 4: Test the lua demo example CVE-2021-45985.
 
 ### Terminal 1:
+
+`cd ~/projects/libcareplus/samples/lua-2021-45985/lua`
 
 `mkdir seed`
 
