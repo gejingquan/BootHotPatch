@@ -101,4 +101,15 @@ Download the lua software source code and compile a binary file with the CVE-202
 
 `sudo libcare-patch-make --clean -i 0001 0001-Bug-finalizers-can-be-called-with-an-invalid-stack.patch`
 
+`sudo mv patchroot/*.kpatch patchroot/lua.kpatch`
+
+Now we have the binary with the CVE-2021-45985 vulnerability (./lpmake/lua) and hot patch file (./patchroot/lua.kpatch).
+
+### Step 3:
+
+Test the lua demo example.
+
+``
+
+``
 
