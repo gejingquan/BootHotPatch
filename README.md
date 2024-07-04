@@ -107,6 +107,16 @@ Download the lua software source code and compile a binary file with the CVE-202
 
 Now we have the binary with the CVE-2021-45985 vulnerability (./lpmake/lua) and hot patch file (./patchroot/lua.kpatch).
 
+Next, let's run the vulnerable binary.
+
+`./lpmake/lua seed/poc.lua`
+
+Since the entire BootHotPatch framework has not yet been started, we can see the crash information.
+
+We now restart the system to start the BootHotPatch framework.
+
+`sudo reboot`
+
 # Section 4: Test the lua demo example CVE-2021-45985.
 
 ### Terminal 1:
