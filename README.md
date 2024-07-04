@@ -72,6 +72,8 @@ Download the software source code of libcareplus and compile it.
 
 `sudo make install`
 
+`sudo chmod 777 /usr/local/bin/*`
+
 ``
 
 
