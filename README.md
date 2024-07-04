@@ -79,7 +79,7 @@ Download the software source code of libcareplus, compile and install it.
 ### Step 2:
 Download the lua software source code and compile a binary file with the CVE-2021-45985 vulnerability and the corresponding hot patch file.
 
-`cd samples`
+`cd ../samples`
 
 `mkdir lua-2021-45985`
 
