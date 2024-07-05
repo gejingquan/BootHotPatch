@@ -22,13 +22,14 @@ Download BootHotPatch code.
 
 Replace the path and kernel version in the source code.
 
+`cd BootHotPatch`
+
 `./replace_path.sh`
 
 
 ### Step 2: 
 Compile BootHotPatch kernel module to get *boothotpatch.ko*.
 
-`cd BootHotPatch`
 
 `sudo apt install build-essential`
 
