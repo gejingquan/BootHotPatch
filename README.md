@@ -20,6 +20,11 @@ Download BootHotPatch code
 
 `git clone https://github.com/gejingquan/BootHotPatch`
 
+Replace the path in the source code
+
+`./replace_path.sh`
+
+
 ### Step 2: 
 Compile BootHotPatch kernel module to get boothotpatch.ko
 
