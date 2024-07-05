@@ -24,6 +24,8 @@ Replace the path and kernel version in the source code.
 
 `cd BootHotPatch`
 
+`sudo chmod 777 replace_path.sh`
+
 `./replace_path.sh`
 
 
