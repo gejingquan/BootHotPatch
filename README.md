@@ -16,17 +16,17 @@ Modify the kernel source code and Makefile and recompile the kernel. Then, insta
 Compile the boothotpatch module separately and configure the module to start automatically at boot.
 
 ### Step 1: 
-Download BootHotPatch code
+Download BootHotPatch code.
 
 `git clone https://github.com/gejingquan/BootHotPatch`
 
-Replace the path in the source code
+Replace the path and kernel version in the source code.
 
 `./replace_path.sh`
 
 
 ### Step 2: 
-Compile BootHotPatch kernel module to get boothotpatch.ko
+Compile BootHotPatch kernel module to get *boothotpatch.ko*.
 
 `cd BootHotPatch`
 
